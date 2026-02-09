@@ -1,319 +1,845 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon -->
+    <meta name="description" content="Portfólio de Guilherme Silva - Desenvolvedor Full Stack">
+    <title>Guilherme Silva | Desenvolvedor Full Stack</title>
+    <link rel="stylesheet" href="assets/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="shortcut icon" href="imgs/faviocn.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
+    <!-- Header/Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">
+                <span class="logo-gradient">&lt;GS/&gt;</span>
+            </a>
 
-<!-- ================= HEADER ================= -->
-<header class="header">
-    <div class="container">
-        <h1 class="logo">Desenvolvedor</h1>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Início</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#sobre" class="nav__link">Sobre</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#servicos" class="nav__link">Serviços</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projetos" class="nav__link">Projetos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contato" class="nav__link nav__cta">Contato</a>
+                    </li>
+                </ul>
 
-        <!-- Botão menu hambúrguer -->
-        <button class="menu-toggle" id="menuToggle">☰</button>
+                <div class="nav__close" id="nav-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </div>
+            </div>
 
-        <!-- Menu de navegação -->
-        <nav class="navList" id="navList">
-            <a href="#sobre">Sobre</a>
-            <a href="#tecnologias">tecnologias</a>
-            <a href="#servicos">Serviços</a>
-            <a href="#faq">Dúvidas</a>
-            <a href="#projetos">projetos</a>
-            <a href="#contato">Contato</a>
+            <div class="nav__toggle" id="nav-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </div>
         </nav>
-    </div>
-    
-</header>
+    </header>
 
-<!-- ================= HERO / INÍCIO ================= -->
-<section class="hero">
-    <div class="container hero-content">
-        <div class="hero-text">
-            <h2>Olá, me chamo Guilherme</h2>
-            <p>Sou desenvolvedor full stack com 18 anos, apaixonado por tecnologia e inovação.
-            </p>
-            <a href="https://wa.me/5581987028550?text=Ol%C3%A1%2C%20gostaria%20de%20um%20site%20para%20minha%20empresa." target="_blank" class="btn">
-                Fale comigo!!
-             </a>
-        </div>
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content">
+                    <div class="home__data">
+                        <span class="home__greeting">Olá, eu sou</span>
+                        <h1 class="home__name">
+                            Guilherme Silva
+                        </h1>
+                        <h2 class="home__profession">
+                            <span class="typing-text"></span>
+                        </h2>
+                        <p class="home__description">
+                            Desenvolvedor Full Stack apaixonado por criar soluções digitais inovadoras.
+                            Transformo ideias em código, do front-end ao back-end.
+                        </p>
 
-        <div class="hero-image">
-            <img src="imgs/faviocn.png">
-        </div>
-    </div>
+                        <div class="home__buttons">
+                            <a href="#contato" class="button button--primary">
+                                Entre em Contato
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                            <a href="#projetos" class="button button--secondary">
+                                Ver Projetos
+                            </a>
+                        </div>
 
-    
-</section>
+                        <div class="home__social">
+                            <a href="https://github.com/lGuilherme-7" target="_blank" class="home__social-link" aria-label="GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/guilherme-da-silva-5a8113334/" target="_blank" class="home__social-link" aria-label="LinkedIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com/guilhermeesilvaac/" target="_blank" class="home__social-link" aria-label="Instagram">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-<!-- ================= SOBRE ================= -->
-<section id="sobre" class="section reveal">
-    
-    <div class="container">
-        <h3>Sobre a profissional</h3>
+                <div class="home__image">
+                    <div class="home__blob">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="url(#gradient)" d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,79.6,-45.8C87.4,-32.6,90,-16.3,88.5,-0.9C87,14.6,81.4,29.2,73.1,42.8C64.8,56.4,53.8,69,40.2,76.8C26.6,84.6,10.4,87.6,-5.8,87.1C-22,86.6,-44,82.6,-60.3,73.2C-76.6,63.8,-87.2,49,-92.1,32.4C-97,15.8,-96.2,-2.6,-89.7,-18.5C-83.2,-34.4,-71,-47.8,-57.3,-55.2C-43.6,-62.6,-28.4,-64,-13.8,-67.8C0.8,-71.6,30.6,-83.6,44.7,-76.4Z" transform="translate(100 100)" />
+                            <defs>
+                                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#6366f1;stop-opacity:0.3" />
+                                    <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.3" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <div class="home__profile">
+                            <div class="profile-placeholder">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <p>
-            Sou estudante de Análise e Desenvolvimento de Sistemas e desenvolvedor em início de carreira, focado em desenvolvimento web. <br>
+            <!-- Scroll Down -->
+            <div class="home__scroll">
+                <a href="#sobre" class="home__scroll-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <polyline points="19 12 12 19 5 12"></polyline>
+                    </svg>
+                    <span>Scroll Down</span>
+                </a>
+            </div>
+        </section>
 
-            Crio soluções completas do front-end ao back-end, sempre focado em entregar
-            produtos de qualidade que fazem a diferença para meus clientes. <br>
+        <!-- About Section -->
+        <section class="about section" id="sobre">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Quem sou eu</span>
+                    <h2 class="section__title">Sobre Mim</h2>
+                </div>
 
-            Tenho experiência prática com HTML, CSS, JavaScript, PHP e MySQL, criando sites responsivos, sistemas simples e sistemas de empresas. <br>
+                <div class="about__container grid">
+                    <div class="about__content">
+                        <h3 class="about__title">Desenvolvedor Full Stack</h3>
+                        <p class="about__description">
+                            Sou estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> e desenvolvedor 
+                            em início de carreira, focado em desenvolvimento web. Tenho 18 anos e sou apaixonado 
+                            por tecnologia e inovação.
+                        </p>
+                        <p class="about__description">
+                            Crio soluções completas do front-end ao back-end, sempre focado em entregar
+                            produtos de qualidade que fazem a diferença para meus clientes.
+                        </p>
+                        <p class="about__description">
+                            Tenho experiência prática com <strong>HTML, CSS, JavaScript, PHP e MySQL</strong>, 
+                            criando sites responsivos, sistemas simples e sistemas para empresas.
+                        </p>
 
-            
-        </p>
+                        <div class="about__info">
+                            <div class="about__info-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg>
+                                <div>
+                                    <span class="about__info-title">Idade</span>
+                                    <span class="about__info-value">18 anos</span>
+                                </div>
+                            </div>
 
-        <ul class="info-list">
-            <li><strong>idade:</strong> Tenho 18 anos</li>
-            <li><strong>Localização:</strong> OLinda, PE </li>
-            <li><strong>Experiência:</strong> Desenvolvimento Full Stack</li>
-        </ul>
+                            <div class="about__info-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <div>
+                                    <span class="about__info-title">Localização</span>
+                                    <span class="about__info-value">Olinda, PE</span>
+                                </div>
+                            </div>
 
-        <!-- ================= VÍDEO ================= -->
+                            <div class="about__info-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                                </svg>
+                                <div>
+                                    <span class="about__info-title">Experiência</span>
+                                    <span class="about__info-value">Full Stack</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-            <!-- SUBSTITUIR pelo vídeo real depois -->
-           
-        </div>
-    </div>
-</section>
+                    <div class="about__stats">
+                        <div class="stat-card">
+                            <div class="stat-card__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="16 18 22 12 16 6"></polyline>
+                                    <polyline points="8 6 2 12 8 18"></polyline>
+                                </svg>
+                            </div>
+                            <h4 class="stat-card__title">Projetos</h4>
+                            <p class="stat-card__value">15+</p>
+                            <p class="stat-card__description">Sites e sistemas desenvolvidos</p>
+                        </div>
 
-    </div>
+                        <div class="stat-card">
+                            <div class="stat-card__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                            </div>
+                            <h4 class="stat-card__title">Clientes</h4>
+                            <p class="stat-card__value">10+</p>
+                            <p class="stat-card__description">Clientes satisfeitos</p>
+                        </div>
 
-</section>
+                        <div class="stat-card">
+                            <div class="stat-card__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                </svg>
+                            </div>
+                            <h4 class="stat-card__title">Qualidade</h4>
+                            <p class="stat-card__value">100%</p>
+                            <p class="stat-card__description">Compromisso com excelência</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<!-- ================= ABORDAGEM ================= -->
-<section id="tecnologias" class="section reveal">
-    <div class="container">
-        <h3>Tecnologias</h3>
+        <!-- Skills Section -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Minhas habilidades</span>
+                    <h2 class="section__title">Tecnologias</h2>
+                    <p class="section__description">
+                        Domino as principais tecnologias do mercado para entregar soluções
+                        completas e escaláveis
+                    </p>
+                </div>
 
-        < <p>
-        Domino as principais tecnologias do mercado para entregar soluções
-        completas e escaláveis, desde a interface até o banco de dados.
-    </p>
+                <div class="skills__container grid">
+                    <div class="skill-card">
+                        <div class="skill-card__icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                        </div>
+                        <h3 class="skill-card__title">HTML5</h3>
+                        <p class="skill-card__description">Estruturação semântica e acessível</p>
+                        <div class="skill-card__level">
+                            <div class="skill-level" style="--level: 95%">
+                                <span class="skill-level__bar"></span>
+                            </div>
+                        </div>
+                    </div>
 
-    <div class="cards tech-cards">
-        <div class="card reveal">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="tech-icon">
-            <h4>HTML5</h4>
-        </div>
+                    <div class="skill-card">
+                        <div class="skill-card__icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                        </div>
+                        <h3 class="skill-card__title">CSS3</h3>
+                        <p class="skill-card__description">Estilização moderna e responsiva</p>
+                        <div class="skill-card__level">
+                            <div class="skill-level" style="--level: 90%">
+                                <span class="skill-level__bar"></span>
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="card reveal">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="tech-icon">
-            <h4>CSS3</h4>
-        </div>
+                    <div class="skill-card">
+                        <div class="skill-card__icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                        </div>
+                        <h3 class="skill-card__title">JavaScript</h3>
+                        <p class="skill-card__description">Interatividade e dinamismo</p>
+                        <div class="skill-card__level">
+                            <div class="skill-level" style="--level: 85%">
+                                <span class="skill-level__bar"></span>
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="card reveal">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="tech-icon">
-            <h4>Python</h4>
-        </div>
+                    <div class="skill-card">
+                        <div class="skill-card__icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+                        </div>
+                        <h3 class="skill-card__title">PHP</h3>
+                        <p class="skill-card__description">Desenvolvimento back-end robusto</p>
+                        <div class="skill-card__level">
+                            <div class="skill-level" style="--level: 80%">
+                                <span class="skill-level__bar"></span>
+                            </div>
+                        </div>
+                    </div>
 
-        
-        <div class="card reveal">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" class="tech-icon">
-            <h4>PHP</h4>
-        </div>
+                    <div class="skill-card">
+                        <div class="skill-card__icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                        </div>
+                        <h3 class="skill-card__title">MySQL</h3>
+                        <p class="skill-card__description">Banco de dados relacional</p>
+                        <div class="skill-card__level">
+                            <div class="skill-level" style="--level: 75%">
+                                <span class="skill-level__bar"></span>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="skill-card">
+                        <div class="skill-card__icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                        </div>
+                        <h3 class="skill-card__title">Python</h3>
+                        <p class="skill-card__description">Automação e scripts</p>
+                        <div class="skill-card__level">
+                            <div class="skill-level" style="--level: 70%">
+                                <span class="skill-level__bar"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div class="card reveal">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="tech-icon">
-            <h4>MySQL</h4>
-        </div>
+        <!-- Services Section -->
+        <section class="services section" id="servicos">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">O que eu faço</span>
+                    <h2 class="section__title">Serviços</h2>
+                </div>
 
-        <div class="card reveal">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-icon">
-            <h4>JavaScript</h4>
-        </div>
-    </div>
-</div>
-</section>
+                <div class="services__container grid">
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">Sites Institucionais</h3>
+                        <p class="service-card__description">
+                            Presença digital profissional para sua empresa com design moderno e responsivo
+                        </p>
+                    </div>
 
-<!-- ================= SERVIÇOS ================= -->
-<section id="servicos" class="section reveal">
-    <div class="container">
-        <h3>Serviços</h3>
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                <polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline>
+                                <polyline points="7.5 19.79 7.5 14.6 3 12"></polyline>
+                                <polyline points="21 12 16.5 14.6 16.5 19.79"></polyline>
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">Landing Pages</h3>
+                        <p class="service-card__description">
+                            Páginas otimizadas para conversão, focadas em resultados e vendas
+                        </p>
+                    </div>
 
-        <ul class="services-list">
-            <li>sites institucionais</li>
-            <li>Landing pages</li>
-            <li>E-commerce</li>
-            <li>Portfólio</li>
-            <li>Loja virtual</li>
-            <li>Manutenção e melhorias</li>
-        </ul>
-    </div>
-</section>
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">E-commerce</h3>
+                        <p class="service-card__description">
+                            Lojas virtuais completas com sistema de pagamento integrado
+                        </p>
+                    </div>
 
-<!-- ================= FAQ ================= -->
-<section id="faq" class="section reveal">
-    <div class="container">
-        <h3>Perguntas frequentes</h3>
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">Portfólio</h3>
+                        <p class="service-card__description">
+                            Portfólios personalizados para destacar seus trabalhos e projetos
+                        </p>
+                    </div>
 
-        <div class="faq-item">
-            <button class="faq-question">
-                <span>Como funciona o processo de desenvolvimento?</span>
-                <span class="arrow">▼</span>
-            </button>
-            <div class="faq-answer">
-                <p>Primeiro fazemos uma reunião para entender suas necessidades, depois eu crio um protótipo, desenvolvo o projeto e entrego com todo suporte necessário.</p>
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">Manutenção</h3>
+                        <p class="service-card__description">
+                            Suporte técnico, atualizações e melhorias contínuas em sites
+                        </p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">Sistemas Web</h3>
+                        <p class="service-card__description">
+                            Sistemas personalizados para gerenciar e automatizar processos
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projetos">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Meu trabalho</span>
+                    <h2 class="section__title">Projetos</h2>
+                    <p class="section__description">
+                        Alguns dos projetos que já desenvolvi
+                    </p>
+                </div>
+
+                <div class="projects__container grid">
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <div class="project-placeholder">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                    <polyline points="21 15 16 10 5 21"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-card__content">
+                            <div class="project-card__tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <h3 class="project-card__title">Projeto 1</h3>
+                            <p class="project-card__description">
+                                Descrição detalhada do projeto, tecnologias utilizadas e desafios superados durante o desenvolvimento.
+                            </p>
+                            <div class="project-card__links">
+                                <a href="#" class="project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                    Ver projeto
+                                </a>
+                                <a href="#" class="project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <div class="project-placeholder">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                    <polyline points="21 15 16 10 5 21"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-card__content">
+                            <div class="project-card__tags">
+                                <span class="tag">PHP</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <h3 class="project-card__title">Projeto 2</h3>
+                            <p class="project-card__description">
+                                Sistema completo desenvolvido com PHP e MySQL, incluindo painel administrativo e área de clientes.
+                            </p>
+                            <div class="project-card__links">
+                                <a href="#" class="project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                    Ver projeto
+                                </a>
+                                <a href="#" class="project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <div class="project-placeholder">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                    <polyline points="21 15 16 10 5 21"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-card__content">
+                            <div class="project-card__tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">Python</span>
+                            </div>
+                            <h3 class="project-card__title">Projeto 3</h3>
+                            <p class="project-card__description">
+                                Landing page com integração de automação em Python para processamento de dados e envio de emails.
+                            </p>
+                            <div class="project-card__links">
+                                <a href="#" class="project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                    Ver projeto
+                                </a>
+                                <a href="#" class="project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq section" id="faq">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Dúvidas comuns</span>
+                    <h2 class="section__title">Perguntas Frequentes</h2>
+                </div>
+
+                <div class="faq__container">
+                    <div class="faq-item">
+                        <button class="faq-item__question">
+                            <span>Como funciona o processo de desenvolvimento?</span>
+                            <svg class="faq-item__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-item__answer">
+                            <p>Primeiro fazemos uma reunião para entender suas necessidades, depois eu crio um protótipo, desenvolvo o projeto e entrego com todo suporte necessário.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-item__question">
+                            <span>Quanto tempo leva para criar um site?</span>
+                            <svg class="faq-item__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-item__answer">
+                            <p>Depende da complexidade do projeto. Um site institucional leva de 1 a 2 semanas, enquanto sistemas mais robustos podem levar de 1 a 2 meses.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-item__question">
+                            <span>Qual o investimento para criar um site?</span>
+                            <svg class="faq-item__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-item__answer">
+                            <p>Os valores variam conforme o projeto. Sites institucionais começam em R$ 1.150,00. Entre em contato para um orçamento personalizado.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-item__question">
+                            <span>Você faz manutenção dos sites?</span>
+                            <svg class="faq-item__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-item__answer">
+                            <p>Sim! Ofereço pacotes de manutenção mensal com suporte técnico, atualizações e melhorias contínuas.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-item__question">
+                            <span>Você ainda está estudando? Isso é um problema?</span>
+                            <svg class="faq-item__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-item__answer">
+                            <p>Não. Estou em constante aprendizado e aplico tudo na prática, sempre buscando entregar o melhor resultado possível.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-item__question">
+                            <span>Você aceita projetos pequenos?</span>
+                            <svg class="faq-item__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-item__answer">
+                            <p>Sim! Projetos pequenos são ótimos para começar e evoluir aos poucos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contato">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Entre em contato</span>
+                    <h2 class="section__title">Vamos trabalhar juntos?</h2>
+                    <p class="section__description">
+                        Estou disponível para novos projetos. Entre em contato e vamos conversar!
+                    </p>
+                </div>
+
+                <div class="contact__container grid">
+                    <div class="contact__info">
+                        <div class="contact-info-card">
+                            <div class="contact-info-card__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div class="contact-info-card__content">
+                                <h4 class="contact-info-card__title">Email</h4>
+                                <p class="contact-info-card__text">ronaldguilherme044@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <div class="contact-info-card__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                            </div>
+                            <div class="contact-info-card__content">
+                                <h4 class="contact-info-card__title">Telefone</h4>
+                                <p class="contact-info-card__text">(81) 98702-8550</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <div class="contact-info-card__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="contact-info-card__content">
+                                <h4 class="contact-info-card__title">Localização</h4>
+                                <p class="contact-info-card__text">Olinda, PE - Brasil</p>
+                            </div>
+                        </div>
+
+                        <a href="https://wa.me/5581987028550?text=Ol%C3%A1%2C%20gostaria%20de%20um%20site%20para%20minha%20empresa." 
+                           target="_blank"
+                           class="button button--whatsapp">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                            </svg>
+                            Falar pelo WhatsApp
+                        </a>
+                    </div>
+
+                    <div class="contact__form-container">
+                        <form class="contact__form" id="contact-form">
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder=" " id="name" required>
+                                <label for="name" class="form__label">Nome completo</label>
+                            </div>
+
+                            <div class="form__group">
+                                <input type="email" class="form__input" placeholder=" " id="email" required>
+                                <label for="email" class="form__label">Email</label>
+                            </div>
+
+                            <div class="form__group">
+                                <input type="tel" class="form__input" placeholder=" " id="phone">
+                                <label for="phone" class="form__label">Telefone (opcional)</label>
+                            </div>
+
+                            <div class="form__group">
+                                <textarea class="form__input form__textarea" placeholder=" " id="message" rows="6" required></textarea>
+                                <label for="message" class="form__label">Mensagem</label>
+                            </div>
+
+                            <button type="submit" class="button button--primary button--full">
+                                Enviar Mensagem
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container grid">
+                <div class="footer__content">
+                    <a href="#home" class="footer__logo">
+                        <span class="logo-gradient">&lt;GS/&gt;</span>
+                    </a>
+                    <p class="footer__description">
+                        Desenvolvedor Full Stack criando soluções digitais para pequenas e grandes empresas.
+                    </p>
+                </div>
+
+                <div class="footer__content">
+                    <h4 class="footer__title">Links Úteis</h4>
+                    <ul class="footer__links">
+                        <li><a href="#sobre" class="footer__link">Sobre mim</a></li>
+                        <li><a href="#skills" class="footer__link">Tecnologias</a></li>
+                        <li><a href="#servicos" class="footer__link">Serviços</a></li>
+                        <li><a href="#projetos" class="footer__link">Projetos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h4 class="footer__title">Contato</h4>
+                    <ul class="footer__info">
+                        <li class="footer__info-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            ronaldguilherme044@gmail.com
+                        </li>
+                        <li class="footer__info-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            (81) 98702-8550
+                        </li>
+                        <li class="footer__info-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            Olinda, PE
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h4 class="footer__title">Redes Sociais</h4>
+                    <div class="footer__social">
+                        <a href="https://github.com/lGuilherme-7" target="_blank" class="footer__social-link" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/guilherme-da-silva-5a8113334/" target="_blank" class="footer__social-link" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/guilhermeesilvaac/" target="_blank" class="footer__social-link" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__copy">
+                <p>© 2026 Guilherme Silva. Todos os direitos reservados.</p>
             </div>
         </div>
+    </footer>
 
-        <div class="faq-item">
-            <button class="faq-question">
-                <span>Quanto tempo leva para criar um site?</span>
-                <span class="arrow">▼</span>
-            </button>
-            <div class="faq-answer">
-                <p>Depende da complexidade do projeto. Um site institucional leva de 1 a 2 semanas, enquanto sistemas mais robustos podem levar de 1 a 2 meses.</p>
-            </div>
-        </div>
+    <!-- Scroll Up Button -->
+    <a href="#home" class="scrollup" id="scroll-up">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+    </a>
 
-        <div class="faq-item">
-            <button class="faq-question">
-                <span>Qual o investimento para criar um site?</span>
-                <span class="arrow">▼</span>
-            </button>
-            <div class="faq-answer">
-                <p>Os valores variam conforme o projeto. Sites institucionais começam em R$ 1.150,00. Entre em contato para um orçamento personalizado.</p>
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <button class="faq-question">
-                <span>Você faz manutenção dos sites?</span>
-                <span class="arrow">▼</span>
-            </button>
-            <div class="faq-answer">
-                <p>Sim! Ofereço pacotes de manutenção mensal com suporte técnico, atualizações e melhorias contínuas.</p>
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <button class="faq-question">
-                <span>Você ainda está estudando? Isso é um problema?</span>
-                <span class="arrow">▼</span>
-            </button>
-            <div class="faq-answer">
-                <p>Não. Estou em constante aprendizado e aplico tudo na prática, sempre buscando entregar o melhor resultado possível.</p>
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <button class="faq-question">
-                <span>Você aceita projetos pequenos?</span>
-                <span class="arrow">▼</span>
-            </button>
-            <div class="faq-answer">
-                <p>Sim! Projetos pequenos são ótimos para começar e evoluir aos poucos.</p>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-
-    <!-- ================= ARTIGOS ================= -->
-<section id="projetos" class="section reveal">
-    <div class="container" id="proejtos">
-        <h3>Projetos já feitos: </h3>
-        
-        <div class="articles-grid">
-            <article class="article-card reveal">
-                <div class="article-image">
-                    <img src="" alt="projeto 1 ">
-                </div>
-                <div class="article-content">
-                    <h4>texto 1</h4>
-                    <p>descrição do projeto.</p>
-                    <a href="#" class="article-link">link para o porejto→</a>
-                </div>
-            </article>
-
-            <article class="article-card reveal">
-                <div class="article-image">
-                    <img src="" alt="projeto 2">
-                </div>
-                <div class="article-content">
-                    <h4>texto 2</h4>
-                    <p>descrição do projeto.</p>
-                    <a href="#" class="article-link">link para o porejto→</a>
-                </div>
-            </article>
-
-            <article class="article-card reveal">
-                <div class="article-image">
-                    <img src="" alt="projeto 3 ">
-                </div>
-                <div class="article-content">
-                    <h4>texto 3</h4>
-                    <p>descrição do projeto.</p>
-                    <a href="#" class="article-link">link para o porejto→</a>
-                </div>
-            </article>
-        </div>
-        
-    </div>
-</section>
-</section>
-
-<!-- ================= CONTATO ================= -->
-<section id="contato" class="section reveal">
-    <div class="container">
-        <h3>Contato e agendamento</h3>
-
-        <p>Entre em contato e feche seu orçamento.</p>
-
-        <a href="https://wa.me/5581987028550?text=Ol%C3%A1%2C%20gostaria%20de%20um%20site%20para%20minha%20empresa." target="_blank" class="btn">Falar pelo WhatsApp</a>
-    </div>
-</section>
-
-<!-- ================= FOOTER ================= -->
-<footer class="footer">
-    <div class="container footer-content">
-        <div class="footer-section">
-            <h4>Sobre</h4>
-            <p>Sou dev web, full stack e crio sistemas para pequenas e grandes empresas.</p>
-        </div>
-
-        <div class="footer-section">
-            <h4>Contato</h4>
-            <p>📧ronaldguilherme044@gmail.com</p>
-            <p>📱 (81) 98702-8550</p>
-            <p>📍 Olinda, PE</p>
-        </div>
-
-        <div class="footer-section">
-            <h4>Links úteis</h4>
-            <a href="#sobre">Sobre mim</a>
-            <a href="#servicos">Serviços</a>
-            <a href="#contato">Contato</a>
-        </div>
-
-        <div class="footer-section">
-            <h4>Redes Sociais</h4>
-            <a href="https://www.instagram.com/guilhermeesilvaac/" target="_blank">Instagram</a>
-            <a href="https://github.com/lGuilherme-7" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/guilherme-da-silva-5a8113334/" target="_blank">LinkedIn</a>
-        </div>
-    </div>
-
-    <div class="footer-bottom">
-        <p>© 2026  Desenvolvidor Full-stack.</p>
-        
-    </div>
-</footer>
-
-<!-- JS -->
-<script src="assets/script.js"></script>
+    <script src="assets/script.js"></script>
 </body>
 </html>
