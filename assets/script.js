@@ -292,3 +292,6 @@ window.addEventListener('scroll', () => {
 console.log('%c🚀 Portfólio - Guilherme Silva', 'color: #6366f1; font-size: 16px; font-weight: bold;');
 console.log('%c💼 Full Stack Developer', 'color: #8b5cf6; font-size: 14px;');
 console.log('%c🌐 https://github.com/lGuilherme-7', 'color: #64748b; font-size: 12px;');
+
+
+
