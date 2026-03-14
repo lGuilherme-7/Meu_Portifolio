@@ -416,60 +416,24 @@ window.addEventListener('load', () => {
     }
 });
 
-/*===== DARK MODE TOGGLE =====*/
-const themeToggle = document.getElementById('theme-toggle');
+/*===== DARK MODE TOGGLE (BONUS) =====*/
+const darkModeToggle = document.getElementById('dark-mode-toggle');
 
-// Verificar preferência salva ou preferência do sistema
-function getThemePreference() {
-    const savedTheme = localStorage.getItem('theme');
+if (darkModeToggle) {
+    // Verificar preferência salva
+    const darkMode = localStorage.getItem('darkMode');
     
-    if (savedTheme) {
-        return savedTheme;
-    }
-    
-    // Verificar preferência do sistema
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        return 'dark';
-    }
-    
-    return 'light';
-}
-
-// Aplicar tema
-function applyTheme(theme) {
-    if (theme === 'dark') {
+    if (darkMode === 'enabled') {
         document.body.classList.add('dark-mode');
-        localStorage.setItem('theme', 'dark');
-    } else {
-        document.body.classList.remove('dark-mode');
-        localStorage.setItem('theme', 'light');
     }
-}
-
-// Inicializar tema
-const currentTheme = getThemePreference();
-applyTheme(currentTheme);
-
-// Toggle theme
-if (themeToggle) {
-    themeToggle.addEventListener('click', () => {
-        const isDark = document.body.classList.contains('dark-mode');
-        applyTheme(isDark ? 'light' : 'dark');
+    
+    darkModeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
         
-        // Adicionar pequena animação ao botão
-        themeToggle.style.transform = 'rotate(360deg) scale(1.2)';
-        setTimeout(() => {
-            themeToggle.style.transform = 'rotate(0deg) scale(1)';
-        }, 300);
-    });
-}
-
-// Detectar mudanças na preferência do sistema
-if (window.matchMedia) {
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-        // Só aplicar automaticamente se o usuário não tiver preferência salva
-        if (!localStorage.getItem('theme')) {
-            applyTheme(e.matches ? 'dark' : 'light');
+        if (document.body.classList.contains('dark-mode')) {
+            localStorage.setItem('darkMode', 'enabled');
+        } else {
+            localStorage.setItem('darkMode', null);
         }
     });
 }
