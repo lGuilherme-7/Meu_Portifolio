@@ -21,22 +21,22 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">Início</a>
+                        <a href="#home" class="nav__link active-link" data-en="Home" data-pt="Início">Início</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#sobre" class="nav__link">Sobre</a>
+                        <a href="#sobre" class="nav__link" data-en="About" data-pt="Sobre">Sobre</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#skills" class="nav__link">Skills</a>
+                        <a href="#skills" class="nav__link" data-en="Skills" data-pt="Skills">Skills</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#servicos" class="nav__link">Serviços</a>
+                        <a href="#servicos" class="nav__link" data-en="Services" data-pt="Serviços">Serviços</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#projetos" class="nav__link">Projetos</a>
+                        <a href="#projetos" class="nav__link" data-en="Projects" data-pt="Projetos">Projetos</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#contato" class="nav__link nav__cta">Contato</a>
+                        <a href="#contato" class="nav__link nav__cta" data-en="Contact" data-pt="Contato">Contato</a>
                     </li>
                 </ul>
 
@@ -48,12 +48,35 @@
                 </div>
             </div>
 
-            <div class="nav__toggle" id="nav-toggle">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <line x1="3" y1="12" x2="21" y2="12"></line>
-                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                    <line x1="3" y1="18" x2="21" y2="18"></line>
-                </svg>
+            <div class="nav__actions">
+                <button class="lang-toggle" id="lang-toggle" aria-label="Toggle language">
+                    <span class="lang-text">EN</span>
+                </button>
+
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </div>
             </div>
         </nav>
     </header>
@@ -65,28 +88,25 @@
             <div class="home__container container grid">
                 <div class="home__content">
                     <div class="home__data">
-                        <span class="home__greeting">Olá, eu sou</span>
-                        <h1 class="home__name">
-                            Guilherme Silva
-                        </h1>
+                        <span class="home__greeting" data-en="Hello, I'm" data-pt="Olá, eu sou">Olá, eu sou</span>
+                        <h1 class="home__name">Guilherme Silva</h1>
                         <h2 class="home__profession">
-                            <span class="typing-text"></span>
+                            <span id="typing-text"></span>
                         </h2>
-                        <p class="home__description">
-                            Desenvolvedor Full Stack apaixonado por criar soluções digitais inovadoras.
-                            Transformo ideias em código, do front-end ao back-end.
+                        <p class="home__description" data-en="Full Stack Developer passionate about creating innovative digital solutions. I transform ideas into code, from front-end to back-end." data-pt="Desenvolvedor Full Stack apaixonado por criar soluções digitais inovadoras. Transformo ideias em código, do front-end ao back-end.">
+                            Desenvolvedor Full Stack apaixonado por criar soluções digitais inovadoras. Transformo ideias em código, do front-end ao back-end.
                         </p>
 
                         <div class="home__buttons">
                             <a href="#contato" class="button button--primary">
-                                Entre em Contato
+                                <span data-en="Get in Touch" data-pt="Entre em Contato">Entre em Contato</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <line x1="5" y1="12" x2="19" y2="12"></line>
                                     <polyline points="12 5 19 12 12 19"></polyline>
                                 </svg>
                             </a>
                             <a href="#projetos" class="button button--secondary">
-                                Ver Projetos
+                                <span data-en="View Projects" data-pt="Ver Projetos">Ver Projetos</span>
                             </a>
                         </div>
 
@@ -135,14 +155,13 @@
                 </div>
             </div>
 
-            <!-- Scroll Down -->
             <div class="home__scroll">
                 <a href="#sobre" class="home__scroll-button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <line x1="12" y1="5" x2="12" y2="19"></line>
                         <polyline points="19 12 12 19 5 12"></polyline>
                     </svg>
-                    <span>Scroll Down</span>
+                    <span data-en="Scroll Down" data-pt="Role para baixo">Role para baixo</span>
                 </a>
             </div>
         </section>
@@ -151,25 +170,21 @@
         <section class="about section" id="sobre">
             <div class="container">
                 <div class="section__header">
-                    <span class="section__subtitle">Quem sou eu</span>
-                    <h2 class="section__title">Sobre Mim</h2>
+                    <span class="section__subtitle" data-en="Who I am" data-pt="Quem sou eu">Quem sou eu</span>
+                    <h2 class="section__title" data-en="About Me" data-pt="Sobre Mim">Sobre Mim</h2>
                 </div>
 
                 <div class="about__container grid">
                     <div class="about__content">
-                        <h3 class="about__title">Desenvolvedor Full Stack</h3>
-                        <p class="about__description">
-                            Sou estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> e desenvolvedor 
-                            em início de carreira, focado em desenvolvimento web. Tenho 18 anos e sou apaixonado 
-                            por tecnologia e inovação.
+                        <h3 class="about__title" data-en="Full Stack Developer" data-pt="Desenvolvedor Full Stack">Desenvolvedor Full Stack</h3>
+                        <p class="about__description" data-en="I'm a Systems Analysis and Development student and early-career developer focused on web development. I'm 18 years old and passionate about technology and innovation." data-pt="Sou estudante de Análise e Desenvolvimento de Sistemas e desenvolvedor em início de carreira, focado em desenvolvimento web. Tenho 18 anos e sou apaixonado por tecnologia e inovação.">
+                            Sou estudante de Análise e Desenvolvimento de Sistemas e desenvolvedor em início de carreira, focado em desenvolvimento web. Tenho 18 anos e sou apaixonado por tecnologia e inovação.
                         </p>
-                        <p class="about__description">
-                            Crio soluções completas do front-end ao back-end, sempre focado em entregar
-                            produtos de qualidade que fazem a diferença para meus clientes.
+                        <p class="about__description" data-en="I create complete solutions from front-end to back-end, always focused on delivering quality products that make a difference for my clients." data-pt="Crio soluções completas do front-end ao back-end, sempre focado em entregar produtos de qualidade que fazem a diferença para meus clientes.">
+                            Crio soluções completas do front-end ao back-end, sempre focado em entregar produtos de qualidade que fazem a diferença para meus clientes.
                         </p>
-                        <p class="about__description">
-                            Tenho experiência prática com <strong>HTML, CSS, JavaScript, PHP e MySQL</strong>, 
-                            criando sites responsivos, sistemas simples e sistemas para empresas.
+                        <p class="about__description" data-en="I have hands-on experience with HTML, CSS, JavaScript, PHP, and MySQL, creating responsive websites, simple systems, and enterprise systems." data-pt="Tenho experiência prática com HTML, CSS, JavaScript, PHP e MySQL, criando sites responsivos, sistemas simples e sistemas para empresas.">
+                            Tenho experiência prática com HTML, CSS, JavaScript, PHP e MySQL, criando sites responsivos, sistemas simples e sistemas para empresas.
                         </p>
 
                         <div class="about__info">
@@ -181,8 +196,8 @@
                                     <line x1="3" y1="10" x2="21" y2="10"></line>
                                 </svg>
                                 <div>
-                                    <span class="about__info-title">Idade</span>
-                                    <span class="about__info-value">18 anos</span>
+                                    <span class="about__info-title" data-en="Age" data-pt="Idade">Idade</span>
+                                    <span class="about__info-value" data-en="18 years old" data-pt="18 anos">18 anos</span>
                                 </div>
                             </div>
 
@@ -192,7 +207,7 @@
                                     <circle cx="12" cy="10" r="3"></circle>
                                 </svg>
                                 <div>
-                                    <span class="about__info-title">Localização</span>
+                                    <span class="about__info-title" data-en="Location" data-pt="Localização">Localização</span>
                                     <span class="about__info-value">Olinda, PE</span>
                                 </div>
                             </div>
@@ -202,7 +217,7 @@
                                     <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
                                 </svg>
                                 <div>
-                                    <span class="about__info-title">Experiência</span>
+                                    <span class="about__info-title" data-en="Experience" data-pt="Experiência">Experiência</span>
                                     <span class="about__info-value">Full Stack</span>
                                 </div>
                             </div>
@@ -217,9 +232,9 @@
                                     <polyline points="8 6 2 12 8 18"></polyline>
                                 </svg>
                             </div>
-                            <h4 class="stat-card__title">Projetos</h4>
+                            <h4 class="stat-card__title" data-en="Projects" data-pt="Projetos">Projetos</h4>
                             <p class="stat-card__value">15+</p>
-                            <p class="stat-card__description">Sites e sistemas desenvolvidos</p>
+                            <p class="stat-card__description" data-en="Websites and systems developed" data-pt="Sites e sistemas desenvolvidos">Sites e sistemas desenvolvidos</p>
                         </div>
 
                         <div class="stat-card">
@@ -231,9 +246,9 @@
                                     <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                                 </svg>
                             </div>
-                            <h4 class="stat-card__title">Clientes</h4>
-                            <p class="stat-card__value">1+</p>
-                            <p class="stat-card__description">Clientes satisfeitos</p>
+                            <h4 class="stat-card__title" data-en="Clients" data-pt="Clientes">Clientes</h4>
+                            <p class="stat-card__value">10+</p>
+                            <p class="stat-card__description" data-en="Satisfied clients" data-pt="Clientes satisfeitos">Clientes satisfeitos</p>
                         </div>
 
                         <div class="stat-card">
@@ -242,9 +257,9 @@
                                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
                                 </svg>
                             </div>
-                            <h4 class="stat-card__title">Qualidade</h4>
+                            <h4 class="stat-card__title" data-en="Quality" data-pt="Qualidade">Qualidade</h4>
                             <p class="stat-card__value">100%</p>
-                            <p class="stat-card__description">Compromisso com excelência</p>
+                            <p class="stat-card__description" data-en="Commitment to excellence" data-pt="Compromisso com excelência">Compromisso com excelência</p>
                         </div>
                     </div>
                 </div>
@@ -255,11 +270,10 @@
         <section class="skills section" id="skills">
             <div class="container">
                 <div class="section__header">
-                    <span class="section__subtitle">Minhas habilidades</span>
-                    <h2 class="section__title">Tecnologias</h2>
-                    <p class="section__description">
-                        Domino as principais tecnologias do mercado para entregar soluções
-                        completas e escaláveis
+                    <span class="section__subtitle" data-en="My abilities" data-pt="Minhas habilidades">Minhas habilidades</span>
+                    <h2 class="section__title" data-en="Technologies" data-pt="Tecnologias">Tecnologias</h2>
+                    <p class="section__description" data-en="I master the main market technologies to deliver complete and scalable solutions" data-pt="Domino as principais tecnologias do mercado para entregar soluções completas e escaláveis">
+                        Domino as principais tecnologias do mercado para entregar soluções completas e escaláveis
                     </p>
                 </div>
 
@@ -269,7 +283,7 @@
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
                         </div>
                         <h3 class="skill-card__title">HTML5</h3>
-                        <p class="skill-card__description">Estruturação semântica e acessível</p>
+                        <p class="skill-card__description" data-en="Semantic and accessible structuring" data-pt="Estruturação semântica e acessível">Estruturação semântica e acessível</p>
                         <div class="skill-card__level">
                             <div class="skill-level" style="--level: 95%">
                                 <span class="skill-level__bar"></span>
@@ -282,7 +296,7 @@
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
                         </div>
                         <h3 class="skill-card__title">CSS3</h3>
-                        <p class="skill-card__description">Estilização moderna e responsiva</p>
+                        <p class="skill-card__description" data-en="Modern and responsive styling" data-pt="Estilização moderna e responsiva">Estilização moderna e responsiva</p>
                         <div class="skill-card__level">
                             <div class="skill-level" style="--level: 90%">
                                 <span class="skill-level__bar"></span>
@@ -295,7 +309,7 @@
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
                         </div>
                         <h3 class="skill-card__title">JavaScript</h3>
-                        <p class="skill-card__description">Interatividade e dinamismo</p>
+                        <p class="skill-card__description" data-en="Interactivity and dynamism" data-pt="Interatividade e dinamismo">Interatividade e dinamismo</p>
                         <div class="skill-card__level">
                             <div class="skill-level" style="--level: 85%">
                                 <span class="skill-level__bar"></span>
@@ -308,7 +322,7 @@
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
                         </div>
                         <h3 class="skill-card__title">PHP</h3>
-                        <p class="skill-card__description">Desenvolvimento back-end robusto</p>
+                        <p class="skill-card__description" data-en="Robust back-end development" data-pt="Desenvolvimento back-end robusto">Desenvolvimento back-end robusto</p>
                         <div class="skill-card__level">
                             <div class="skill-level" style="--level: 80%">
                                 <span class="skill-level__bar"></span>
@@ -321,7 +335,7 @@
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
                         </div>
                         <h3 class="skill-card__title">MySQL</h3>
-                        <p class="skill-card__description">Banco de dados relacional</p>
+                        <p class="skill-card__description" data-en="Relational database" data-pt="Banco de dados relacional">Banco de dados relacional</p>
                         <div class="skill-card__level">
                             <div class="skill-level" style="--level: 75%">
                                 <span class="skill-level__bar"></span>
@@ -334,7 +348,7 @@
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
                         </div>
                         <h3 class="skill-card__title">Python</h3>
-                        <p class="skill-card__description">Automação e scripts</p>
+                        <p class="skill-card__description" data-en="Automation and scripts" data-pt="Automação e scripts">Automação e scripts</p>
                         <div class="skill-card__level">
                             <div class="skill-level" style="--level: 70%">
                                 <span class="skill-level__bar"></span>
@@ -349,8 +363,8 @@
         <section class="services section" id="servicos">
             <div class="container">
                 <div class="section__header">
-                    <span class="section__subtitle">O que eu faço</span>
-                    <h2 class="section__title">Serviços</h2>
+                    <span class="section__subtitle" data-en="What I do" data-pt="O que eu faço">O que eu faço</span>
+                    <h2 class="section__title" data-en="Services" data-pt="Serviços">Serviços</h2>
                 </div>
 
                 <div class="services__container grid">
@@ -362,8 +376,8 @@
                                 <line x1="12" y1="17" x2="12" y2="21"></line>
                             </svg>
                         </div>
-                        <h3 class="service-card__title">Sites Institucionais</h3>
-                        <p class="service-card__description">
+                        <h3 class="service-card__title" data-en="Institutional Websites" data-pt="Sites Institucionais">Sites Institucionais</h3>
+                        <p class="service-card__description" data-en="Professional digital presence for your company with modern and responsive design" data-pt="Presença digital profissional para sua empresa com design moderno e responsivo">
                             Presença digital profissional para sua empresa com design moderno e responsivo
                         </p>
                     </div>
@@ -372,15 +386,10 @@
                         <div class="service-card__icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                                <polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline>
-                                <polyline points="7.5 19.79 7.5 14.6 3 12"></polyline>
-                                <polyline points="21 12 16.5 14.6 16.5 19.79"></polyline>
-                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
                             </svg>
                         </div>
-                        <h3 class="service-card__title">Landing Pages</h3>
-                        <p class="service-card__description">
+                        <h3 class="service-card__title" data-en="Landing Pages" data-pt="Landing Pages">Landing Pages</h3>
+                        <p class="service-card__description" data-en="Pages optimized for conversion, focused on results and sales" data-pt="Páginas otimizadas para conversão, focadas em resultados e vendas">
                             Páginas otimizadas para conversão, focadas em resultados e vendas
                         </p>
                     </div>
@@ -394,7 +403,7 @@
                             </svg>
                         </div>
                         <h3 class="service-card__title">E-commerce</h3>
-                        <p class="service-card__description">
+                        <p class="service-card__description" data-en="Complete online stores with integrated payment system" data-pt="Lojas virtuais completas com sistema de pagamento integrado">
                             Lojas virtuais completas com sistema de pagamento integrado
                         </p>
                     </div>
@@ -406,8 +415,8 @@
                                 <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
                             </svg>
                         </div>
-                        <h3 class="service-card__title">Portfólio</h3>
-                        <p class="service-card__description">
+                        <h3 class="service-card__title" data-en="Portfolio" data-pt="Portfólio">Portfólio</h3>
+                        <p class="service-card__description" data-en="Personalized portfolios to showcase your work and projects" data-pt="Portfólios personalizados para destacar seus trabalhos e projetos">
                             Portfólios personalizados para destacar seus trabalhos e projetos
                         </p>
                     </div>
@@ -418,8 +427,8 @@
                                 <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
                             </svg>
                         </div>
-                        <h3 class="service-card__title">Manutenção</h3>
-                        <p class="service-card__description">
+                        <h3 class="service-card__title" data-en="Maintenance" data-pt="Manutenção">Manutenção</h3>
+                        <p class="service-card__description" data-en="Technical support, updates and continuous improvements on websites" data-pt="Suporte técnico, atualizações e melhorias contínuas em sites">
                             Suporte técnico, atualizações e melhorias contínuas em sites
                         </p>
                     </div>
@@ -431,8 +440,8 @@
                                 <polyline points="8 6 2 12 8 18"></polyline>
                             </svg>
                         </div>
-                        <h3 class="service-card__title">Sistemas Web</h3>
-                        <p class="service-card__description">
+                        <h3 class="service-card__title" data-en="Web Systems" data-pt="Sistemas Web">Sistemas Web</h3>
+                        <p class="service-card__description" data-en="Custom systems to manage and automate processes" data-pt="Sistemas personalizados para gerenciar e automatizar processos">
                             Sistemas personalizados para gerenciar e automatizar processos
                         </p>
                     </div>
@@ -444,9 +453,9 @@
         <section class="projects section" id="projetos">
             <div class="container">
                 <div class="section__header">
-                    <span class="section__subtitle">Meu trabalho</span>
-                    <h2 class="section__title">Projetos</h2>
-                    <p class="section__description">
+                    <span class="section__subtitle" data-en="My work" data-pt="Meu trabalho">Meu trabalho</span>
+                    <h2 class="section__title" data-en="Projects" data-pt="Projetos">Projetos</h2>
+                    <p class="section__description" data-en="Some of the projects I've developed" data-pt="Alguns dos projetos que já desenvolvi">
                         Alguns dos projetos que já desenvolvi
                     </p>
                 </div>
@@ -468,8 +477,8 @@
                                 <span class="tag">CSS</span>
                                 <span class="tag">JavaScript</span>
                             </div>
-                            <h3 class="project-card__title">Projeto 1</h3>
-                            <p class="project-card__description">
+                            <h3 class="project-card__title" data-en="Project 1" data-pt="Projeto 1">Projeto 1</h3>
+                            <p class="project-card__description" data-en="Detailed project description, technologies used and challenges overcome during development." data-pt="Descrição detalhada do projeto, tecnologias utilizadas e desafios superados durante o desenvolvimento.">
                                 Descrição detalhada do projeto, tecnologias utilizadas e desafios superados durante o desenvolvimento.
                             </p>
                             <div class="project-card__links">
@@ -479,7 +488,7 @@
                                         <polyline points="15 3 21 3 21 9"></polyline>
                                         <line x1="10" y1="14" x2="21" y2="3"></line>
                                     </svg>
-                                    Ver projeto
+                                    <span data-en="View project" data-pt="Ver projeto">Ver projeto</span>
                                 </a>
                                 <a href="#" class="project-link">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -507,8 +516,8 @@
                                 <span class="tag">MySQL</span>
                                 <span class="tag">JavaScript</span>
                             </div>
-                            <h3 class="project-card__title">Projeto 2</h3>
-                            <p class="project-card__description">
+                            <h3 class="project-card__title" data-en="Project 2" data-pt="Projeto 2">Projeto 2</h3>
+                            <p class="project-card__description" data-en="Complete system developed with PHP and MySQL, including admin panel and customer area." data-pt="Sistema completo desenvolvido com PHP e MySQL, incluindo painel administrativo e área de clientes.">
                                 Sistema completo desenvolvido com PHP e MySQL, incluindo painel administrativo e área de clientes.
                             </p>
                             <div class="project-card__links">
@@ -518,7 +527,7 @@
                                         <polyline points="15 3 21 3 21 9"></polyline>
                                         <line x1="10" y1="14" x2="21" y2="3"></line>
                                     </svg>
-                                    Ver projeto
+                                    <span data-en="View project" data-pt="Ver projeto">Ver projeto</span>
                                 </a>
                                 <a href="#" class="project-link">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -546,8 +555,8 @@
                                 <span class="tag">CSS</span>
                                 <span class="tag">Python</span>
                             </div>
-                            <h3 class="project-card__title">Projeto 3</h3>
-                            <p class="project-card__description">
+                            <h3 class="project-card__title" data-en="Project 3" data-pt="Projeto 3">Projeto 3</h3>
+                            <p class="project-card__description" data-en="Landing page with Python automation integration for data processing and email sending." data-pt="Landing page com integração de automação em Python para processamento de dados e envio de emails.">
                                 Landing page com integração de automação em Python para processamento de dados e envio de emails.
                             </p>
                             <div class="project-card__links">
@@ -557,7 +566,7 @@
                                         <polyline points="15 3 21 3 21 9"></polyline>
                                         <line x1="10" y1="14" x2="21" y2="3"></line>
                                     </svg>
-                                    Ver projeto
+                                    <span data-en="View project" data-pt="Ver projeto">Ver projeto</span>
                                 </a>
                                 <a href="#" class="project-link">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -576,80 +585,92 @@
         <section class="faq section" id="faq">
             <div class="container">
                 <div class="section__header">
-                    <span class="section__subtitle">Dúvidas comuns</span>
-                    <h2 class="section__title">Perguntas Frequentes</h2>
+                    <span class="section__subtitle" data-en="Common questions" data-pt="Dúvidas comuns">Dúvidas comuns</span>
+                    <h2 class="section__title" data-en="FAQ" data-pt="Perguntas Frequentes">Perguntas Frequentes</h2>
                 </div>
 
                 <div class="faq__container">
                     <div class="faq-item">
                         <button class="faq-item__question">
-                            <span>Como funciona o processo de desenvolvimento?</span>
+                            <span data-en="How does the development process work?" data-pt="Como funciona o processo de desenvolvimento?">Como funciona o processo de desenvolvimento?</span>
                             <svg class="faq-item__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"></polyline>
                             </svg>
                         </button>
                         <div class="faq-item__answer">
-                            <p>Primeiro fazemos uma reunião para entender suas necessidades, depois eu crio um protótipo, desenvolvo o projeto e entrego com todo suporte necessário.</p>
+                            <p data-en="First we have a meeting to understand your needs, then I create a prototype, develop the project and deliver with all necessary support." data-pt="Primeiro fazemos uma reunião para entender suas necessidades, depois eu crio um protótipo, desenvolvo o projeto e entrego com todo suporte necessário.">
+                                Primeiro fazemos uma reunião para entender suas necessidades, depois eu crio um protótipo, desenvolvo o projeto e entrego com todo suporte necessário.
+                            </p>
                         </div>
                     </div>
 
                     <div class="faq-item">
                         <button class="faq-item__question">
-                            <span>Quanto tempo leva para criar um site?</span>
+                            <span data-en="How long does it take to create a website?" data-pt="Quanto tempo leva para criar um site?">Quanto tempo leva para criar um site?</span>
                             <svg class="faq-item__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"></polyline>
                             </svg>
                         </button>
                         <div class="faq-item__answer">
-                            <p>Depende da complexidade do projeto. Um site institucional leva de 1 a 2 semanas, enquanto sistemas mais robustos podem levar de 1 a 2 meses.</p>
+                            <p data-en="It depends on the project complexity. An institutional website takes 1 to 2 weeks, while more robust systems can take 1 to 2 months." data-pt="Depende da complexidade do projeto. Um site institucional leva de 1 a 2 semanas, enquanto sistemas mais robustos podem levar de 1 a 2 meses.">
+                                Depende da complexidade do projeto. Um site institucional leva de 1 a 2 semanas, enquanto sistemas mais robustos podem levar de 1 a 2 meses.
+                            </p>
                         </div>
                     </div>
 
                     <div class="faq-item">
                         <button class="faq-item__question">
-                            <span>Qual o investimento para criar um site?</span>
+                            <span data-en="What is the investment to create a website?" data-pt="Qual o investimento para criar um site?">Qual o investimento para criar um site?</span>
                             <svg class="faq-item__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"></polyline>
                             </svg>
                         </button>
                         <div class="faq-item__answer">
-                            <p>Os valores variam conforme o projeto. Sites institucionais começam em R$ 1.150,00. Entre em contato para um orçamento personalizado.</p>
+                            <p data-en="Values vary according to the project. Institutional websites start at R$ 1,150.00. Contact me for a personalized quote." data-pt="Os valores variam conforme o projeto. Sites institucionais começam em R$ 1.150,00. Entre em contato para um orçamento personalizado.">
+                                Os valores variam conforme o projeto. Sites institucionais começam em R$ 1.150,00. Entre em contato para um orçamento personalizado.
+                            </p>
                         </div>
                     </div>
 
                     <div class="faq-item">
                         <button class="faq-item__question">
-                            <span>Você faz manutenção dos sites?</span>
+                            <span data-en="Do you do website maintenance?" data-pt="Você faz manutenção dos sites?">Você faz manutenção dos sites?</span>
                             <svg class="faq-item__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"></polyline>
                             </svg>
                         </button>
                         <div class="faq-item__answer">
-                            <p>Sim! Ofereço pacotes de manutenção mensal com suporte técnico, atualizações e melhorias contínuas.</p>
+                            <p data-en="Yes! I offer monthly maintenance packages with technical support, updates and continuous improvements." data-pt="Sim! Ofereço pacotes de manutenção mensal com suporte técnico, atualizações e melhorias contínuas.">
+                                Sim! Ofereço pacotes de manutenção mensal com suporte técnico, atualizações e melhorias contínuas.
+                            </p>
                         </div>
                     </div>
 
                     <div class="faq-item">
                         <button class="faq-item__question">
-                            <span>Você ainda está estudando? Isso é um problema?</span>
+                            <span data-en="You're still studying? Is this a problem?" data-pt="Você ainda está estudando? Isso é um problema?">Você ainda está estudando? Isso é um problema?</span>
                             <svg class="faq-item__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"></polyline>
                             </svg>
                         </button>
                         <div class="faq-item__answer">
-                            <p>Não. Estou em constante aprendizado e aplico tudo na prática, sempre buscando entregar o melhor resultado possível.</p>
+                            <p data-en="No. I'm constantly learning and applying everything in practice, always seeking to deliver the best possible result." data-pt="Não. Estou em constante aprendizado e aplico tudo na prática, sempre buscando entregar o melhor resultado possível.">
+                                Não. Estou em constante aprendizado e aplico tudo na prática, sempre buscando entregar o melhor resultado possível.
+                            </p>
                         </div>
                     </div>
 
                     <div class="faq-item">
                         <button class="faq-item__question">
-                            <span>Você aceita projetos pequenos?</span>
+                            <span data-en="Do you accept small projects?" data-pt="Você aceita projetos pequenos?">Você aceita projetos pequenos?</span>
                             <svg class="faq-item__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"></polyline>
                             </svg>
                         </button>
                         <div class="faq-item__answer">
-                            <p>Sim! Projetos pequenos são ótimos para começar e evoluir aos poucos.</p>
+                            <p data-en="Yes! Small projects are great to start and evolve gradually." data-pt="Sim! Projetos pequenos são ótimos para começar e evoluir aos poucos.">
+                                Sim! Projetos pequenos são ótimos para começar e evoluir aos poucos.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -660,9 +681,9 @@
         <section class="contact section" id="contato">
             <div class="container">
                 <div class="section__header">
-                    <span class="section__subtitle">Entre em contato</span>
-                    <h2 class="section__title">Vamos trabalhar juntos?</h2>
-                    <p class="section__description">
+                    <span class="section__subtitle" data-en="Get in touch" data-pt="Entre em contato">Entre em contato</span>
+                    <h2 class="section__title" data-en="Let's work together?" data-pt="Vamos trabalhar juntos?">Vamos trabalhar juntos?</h2>
+                    <p class="section__description" data-en="I'm available for new projects. Get in touch and let's talk!" data-pt="Estou disponível para novos projetos. Entre em contato e vamos conversar!">
                         Estou disponível para novos projetos. Entre em contato e vamos conversar!
                     </p>
                 </div>
@@ -689,7 +710,7 @@
                                 </svg>
                             </div>
                             <div class="contact-info-card__content">
-                                <h4 class="contact-info-card__title">Telefone</h4>
+                                <h4 class="contact-info-card__title" data-en="Phone" data-pt="Telefone">Telefone</h4>
                                 <p class="contact-info-card__text">(81) 98702-8550</p>
                             </div>
                         </div>
@@ -702,8 +723,8 @@
                                 </svg>
                             </div>
                             <div class="contact-info-card__content">
-                                <h4 class="contact-info-card__title">Localização</h4>
-                                <p class="contact-info-card__text">Olinda, PE - Brasil</p>
+                                <h4 class="contact-info-card__title" data-en="Location" data-pt="Localização">Localização</h4>
+                                <p class="contact-info-card__text" data-en="Olinda, PE - Brazil" data-pt="Olinda, PE - Brasil">Olinda, PE - Brasil</p>
                             </div>
                         </div>
 
@@ -713,7 +734,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                             </svg>
-                            Falar pelo WhatsApp
+                            <span data-en="Talk via WhatsApp" data-pt="Falar pelo WhatsApp">Falar pelo WhatsApp</span>
                         </a>
                     </div>
 
@@ -721,7 +742,7 @@
                         <form class="contact__form" id="contact-form">
                             <div class="form__group">
                                 <input type="text" class="form__input" placeholder=" " id="name" required>
-                                <label for="name" class="form__label">Nome completo</label>
+                                <label for="name" class="form__label" data-en="Full name" data-pt="Nome completo">Nome completo</label>
                             </div>
 
                             <div class="form__group">
@@ -731,16 +752,16 @@
 
                             <div class="form__group">
                                 <input type="tel" class="form__input" placeholder=" " id="phone">
-                                <label for="phone" class="form__label">Telefone (opcional)</label>
+                                <label for="phone" class="form__label" data-en="Phone (optional)" data-pt="Telefone (opcional)">Telefone (opcional)</label>
                             </div>
 
                             <div class="form__group">
                                 <textarea class="form__input form__textarea" placeholder=" " id="message" rows="6" required></textarea>
-                                <label for="message" class="form__label">Mensagem</label>
+                                <label for="message" class="form__label" data-en="Message" data-pt="Mensagem">Mensagem</label>
                             </div>
 
                             <button type="submit" class="button button--primary button--full">
-                                Enviar Mensagem
+                                <span data-en="Send Message" data-pt="Enviar Mensagem">Enviar Mensagem</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <line x1="22" y1="2" x2="11" y2="13"></line>
                                     <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
@@ -761,23 +782,23 @@
                     <a href="#home" class="footer__logo">
                         <span class="logo-gradient">&lt;GS/&gt;</span>
                     </a>
-                    <p class="footer__description">
+                    <p class="footer__description" data-en="Full Stack Developer creating digital solutions for small and large companies." data-pt="Desenvolvedor Full Stack criando soluções digitais para pequenas e grandes empresas.">
                         Desenvolvedor Full Stack criando soluções digitais para pequenas e grandes empresas.
                     </p>
                 </div>
 
                 <div class="footer__content">
-                    <h4 class="footer__title">Links Úteis</h4>
+                    <h4 class="footer__title" data-en="Useful Links" data-pt="Links Úteis">Links Úteis</h4>
                     <ul class="footer__links">
-                        <li><a href="#sobre" class="footer__link">Sobre mim</a></li>
-                        <li><a href="#skills" class="footer__link">Tecnologias</a></li>
-                        <li><a href="#servicos" class="footer__link">Serviços</a></li>
-                        <li><a href="#projetos" class="footer__link">Projetos</a></li>
+                        <li><a href="#sobre" class="footer__link" data-en="About me" data-pt="Sobre mim">Sobre mim</a></li>
+                        <li><a href="#skills" class="footer__link" data-en="Technologies" data-pt="Tecnologias">Tecnologias</a></li>
+                        <li><a href="#servicos" class="footer__link" data-en="Services" data-pt="Serviços">Serviços</a></li>
+                        <li><a href="#projetos" class="footer__link" data-en="Projects" data-pt="Projetos">Projetos</a></li>
                     </ul>
                 </div>
 
                 <div class="footer__content">
-                    <h4 class="footer__title">Contato</h4>
+                    <h4 class="footer__title" data-en="Contact" data-pt="Contato">Contato</h4>
                     <ul class="footer__info">
                         <li class="footer__info-item">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -803,7 +824,7 @@
                 </div>
 
                 <div class="footer__content">
-                    <h4 class="footer__title">Redes Sociais</h4>
+                    <h4 class="footer__title" data-en="Social Media" data-pt="Redes Sociais">Redes Sociais</h4>
                     <div class="footer__social">
                         <a href="https://github.com/lGuilherme-7" target="_blank" class="footer__social-link" aria-label="GitHub">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -827,7 +848,7 @@
             </div>
 
             <div class="footer__copy">
-                <p>© 2026 Guilherme Silva. Todos os direitos reservados.</p>
+                <p>© 2026 Guilherme Silva. <span data-en="All rights reserved." data-pt="Todos os direitos reservados.">Todos os direitos reservados.</span></p>
             </div>
         </div>
     </footer>
