@@ -294,4 +294,28 @@ console.log('%c💼 Full Stack Developer', 'color: #8b5cf6; font-size: 14px;');
 console.log('%c🌐 https://github.com/lGuilherme-7', 'color: #64748b; font-size: 12px;');
 
 
+document.getElementById("contact-form")
+.addEventListener("submit", function(event){
 
+event.preventDefault();
+
+emailjs.send("my-portifolio","template_gpcjus9",{
+
+name: document.getElementById("name").value,
+email: document.getElementById("email").value,
+phone: document.getElementById("phone").value,
+message: document.getElementById("message").value
+
+})
+.then(function(){
+
+alert("Mensagem enviada com sucesso!");
+document.getElementById("contact-form").reset();
+
+}, function(error){
+
+alert("Erro ao enviar. Tente novamente.");
+
+});
+
+});
