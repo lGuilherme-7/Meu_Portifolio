@@ -41,7 +41,8 @@ const textsPt = [
     'Desenvolvedor Full Stack',
     'Web Developer',
     'Frontend Developer',
-    'Backend Developer'
+    'Backend Developer',
+    'Desenvolvedor Full Stack'
 ];
 const textsEn = [
     'Full Stack Developer',
